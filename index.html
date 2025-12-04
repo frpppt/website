@@ -94,15 +94,13 @@
     .news-item{padding:10px;border-left:3px solid rgba(255,255,255,0.03)}
     .news-item time{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}
 
-    /* LIGHTBOX FIXED */
-    .lightbox{
-      position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.8);z-index:50;padding:24px;
-    }
-    .lightbox img{max-width:92%;max-height:86%;border-radius:8px;box-shadow:0 18px 60px rgba(0,0,0,0.8)}
-    .lightbox:target{display:flex}
-    .close{
-      position:absolute;right:24px;top:18px;color:#fff;font-size:22px;text-decoration:none;
-    }
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+}
 
     footer{padding:18px;text-align:center;color:var(--muted);font-size:13px}
 
@@ -211,36 +209,33 @@
 
   </main>
 
-  <!-- LIGHTBOX FIXED -->
-  <div id="img1" class="lightbox">
+ <div class="gallery">
+
+  <a href="#img1">
     <img src="https://cdn.lifehacker.ru/wp-content/uploads/2025/09/uffulrex_1758209075_lh_average_step_6.png">
-    <a class="close" href="#gallery">✕</a>
-  </div>
+  </a>
 
-  <div id="img2" class="lightbox">
+  <a href="#img2">
     <img src="https://th.bing.com/th/id/R.c56a5c8c5a9b6fd3cab4eb38b2c8af7c?rik=3hKvZrCfCUtt3A&riu=http%3a%2f%2favatars.mds.yandex.net%2fget-kinopoisk-image%2f10812607%2fdc110d7a-de74-4d30-8744-ce8c81a10e54%2forig&ehk=csrKSDICS6goiZiN0EUwRNUkIgI5rcuDjBLtReKOwYA%3d&risl=&pid=ImgRaw&r=0">
-    <a class="close" href="#gallery">✕</a>
-  </div>
+  </a>
 
-  <div id="img3" class="lightbox">
-    <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10592371/1d414c73-b64a-45bf-a36d-c3b46281a4ff/1920x"  alt="safina">
-    <a class="close" href="#gallery">✕</a>
-  </div>
+  <a href="#img3">
+    <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10592371/1d414c73-b64a-45bf-a36d-c3b46281a4ff/1920x">
+  </a>
 
-  <div id="img4" class="lightbox">
-    <img src="https://img.championat.com/s/732x488/news/big/v/x/illyuziya-obmana-3-stala-samym-kassovym-filmom-serii-v-rossii_17639806761273227283.jpg">
-    <a class="close" href="#gallery">✕</a>
-  </div>
+  <a href="#img4">
+    <img src="https://img.championat.com/s/732x488/news/big/v/x/illyuziya-obmana-3-stala-samym-kassovym-filmom-serii-в-россии.jpg">
+  </a>
 
-  <div id="img5" class="lightbox">
+  <a href="#img5">
     <img src="https://avatars.mds.yandex.net/get-video_thumb_fresh/1445604/8b5df27473e1d1f888b46e4d8dc17d7a1202_rt/800x450">
-    <a class="close" href="#gallery">✕</a>
-  </div>
+  </a>
 
-  <div id="img6" class="lightbox">
+  <a href="#img6">
     <img src="https://s4.afisha.ru/mediastorage/ee/cd/0375359149f549efa63e0fbdcdee.jpg">
-    <a class="close" href="#gallery">✕</a>
-  </div>
+  </a>
+
+</div>
 
   <footer>
     © Промо «Иллюзия обмана 3»
